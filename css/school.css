@@ -1,0 +1,223 @@
+/* レーザー精密加工スクール専用CSS */
+.school-intro {
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.school-intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.school-intro p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.school-intro button {
+    background-color: #0078D7;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.school-intro button:hover {
+    background-color: #005bb5;
+}
+
+/* PDF 埋め込み */
+.pdf-embed {
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* スケジュール */
+.school-schedule {
+    padding: 20px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.schedule-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.schedule-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 300px;
+}
+
+/* 教育プログラム */
+.school-program {
+    padding: 20px 20px;
+    background-color: #f0f4f8;
+}
+
+.program-content h3 {
+    margin-bottom: 10px;
+}
+
+.program-content ul {
+    list-style: disc;
+    margin: 0 20px 20px;
+}
+
+.program-content ul li {
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+/* レーザー精密加工スクールのスタイル */
+.school-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pdf-container {
+    flex: 1;
+    max-width: 50%; /* 左側PDFの最大幅 */
+    background: #f0f0f0;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.school-description {
+    flex: 1;
+    max-width: 50%; /* 右側の解説部分 */
+    text-align: left;
+}
+
+.school-description h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.school-description p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.school-description button {
+    background-color: #0078D7;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.school-description button:hover {
+    background-color: #005bb5;
+}
+
+.program-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.program-card {
+    flex: 1 1 calc(50% - 20px); /* カードを2列表示 */
+    max-width: 500px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+}
+
+.program-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.program-card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.program-card li {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.program-card .days {
+    font-weight: bold;
+    color: #0078D7;
+}
+
+/* 教育プログラムと試作支援サービス */
+.program-service {
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.program-card {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.program-section {
+    margin-bottom: 20px;
+}
+
+.program-section h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.program-section ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.program-section li {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between; /* 右端と左端を揃える */
+}
+
+.program-section .days {
+    font-weight: bold;
+    color: #0078D7;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin: 20px 0;
+}

@@ -1,0 +1,219 @@
+/* Heroセクション */
+.hero {
+    position: relative;
+    height: 400px;
+    background: url('../img/top_img.jpg') no-repeat center center/cover;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* 背景画像の暗さ調整 */
+}
+
+.hero-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.hero-content .hero-logo {
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.contact-btn {
+    background-color: #0078D7;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #005bb5;
+}
+
+/* サービスセクション */
+.services-section {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.service-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.service-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.service-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* お知らせセクション */
+.news-section {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f8f9fa;
+}
+
+.news-item {
+    margin: 20px auto;
+    max-width: 800px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.news-item h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.news-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* 施設紹介セクション */
+.facility-section {
+    padding: 20px 0;
+    background-color: #f9f9f9;
+}
+
+.facility-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* 画像とテキストの間隔 */
+    width: 90%;
+    margin: 0 auto;
+}
+
+.facility-image {
+    flex: 1; /* 画像エリアの幅 */
+    text-align: center;
+}
+
+.facility-image img {
+    width: 100%;
+    max-width: 500px; /* 画像の最大幅 */
+    height: auto;
+}
+
+.facility-description {
+    flex: 2; /* 説明文エリアの幅 */
+    text-align: left;
+}
+
+.facility-description h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.facility-description p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* ヘッダーの影効果 */
+header {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 下方向に影をつける */
+    z-index: 10; /* 他の要素より上に表示 */
+    position: relative; /* 影の表示を明確にする */
+    background-color: #fff; /* 背景色がないと影が見えにくい */
+    padding: 10px 0;
+}
+
+/* コンセプト&サービス セクションの余白調整 */
+.services-container {
+    margin-top: 10px; /* 余白を追加 */
+}
+
+/* aタグのデフォルト装飾を削除 */
+.service-card-link {
+    text-decoration: none; /* アンダーラインを消す */
+    color: inherit; /* 親要素の文字色を継承 */
+    display: block; /* カード全体をクリック可能にする */
+}
+
+/* カード内のテキストスタイル */
+.service-card h3,
+.service-card p {
+    margin: 0; /* 不要な余白を削除 */
+    color: #333; /* 文字色を固定 */
+    transition: color 0.3s ease; /* ホバー時のスムーズな変化 */
+}
+
+/* ホバー時に背景色や影を追加（オプション） */
+.service-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* カードに影を追加 */
+    transform: translateY(-3px); /* 少し浮き上がる効果 */
+    transition: all 0.3s ease;
+}
+
+/* お問い合わせボタンのスタイル */
+button {
+    background-color: #0078D7; /* ボタンの背景色 */
+    color: #fff; /* 文字色 */
+    border: none; /* 枠線をなくす */
+    padding: 10px 20px; /* 上下左右の余白 */
+    font-size: 1rem; /* フォントサイズ */
+    font-weight: bold; /* 文字を太く */
+    border-radius: 5px; /* 角を丸く */
+    cursor: pointer; /* カーソルをポインターに */
+    transition: all 0.3s ease; /* ホバー時のアニメーション */
+    text-decoration: none; /* テキストの下線を消す */
+    display: inline-block; /* インラインブロックに */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* 影を追加 */
+}
+
+button:hover {
+    background-color: #005bb5; /* ホバー時の色 */
+    transform: translateY(-2px); /* 浮き上がる効果 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* ホバー時の影 */
+}
