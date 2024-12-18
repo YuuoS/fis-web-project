@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>レーザー精密加工スクール</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/school.css">
+</head>
+<body data-page="laser_school">
+    <!-- ヘッダー -->
+    <header>
+        <div class="header-container">
+            <!-- 左側: ロゴとテキスト全体をリンク化 -->
+            <a href="index.html" class="logo-link">
+                <div class="logo-text">
+                    <img src="img/レーザー工房ロゴ_背景透過.svg" alt="ロゴ" class="header-logo">
+                    <div class="header-title-container">
+                        <span class="header-title">ふらっと試作工房</span>
+                        <span class="header-subtitle">上田市先端技術教育プログラム運営事業</span>
+                    </div>
+                </div>
+            </a>
+            <!-- ナビゲーションメニュー -->
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="facility.html">施設紹介</a></li>
+                    <li><a href="laser_school.html">レーザー精密加工スクール</a></li>
+                    <li><a href="news.html">お知らせ</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- メインセクション -->
+    <section class="school-intro">
+        <div class="school-container">
+            <!-- 左側: PDF埋め込み -->
+            <div class="pdf-container">
+                <iframe src="img/募集チラシ_汎用版.pdf" width="100%" height="500px" title="募集チラシ"></iframe>
+            </div>
+
+            <!-- 右側: 解説と申し込みボタン -->
+            <div class="school-description">
+                <h1>レーザー精密加工スクール</h1>
+                <p>
+                    電気自動車、半導体、スマートフォン製品などといった先端産業において、レーザー加工技術が注目されています。
+                    この新しい技術を製造現場に持ち込むには、レーザー加工装置の使い方や安全に運用する知識が必要です。
+                </p>
+                <!-- スクール申し込みボタン -->
+                <button onclick="location.href='contact.html'">スクールに申し込む</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- スクール申請書リンク -->
+    <section class="school-application">
+        <div class="application-container">
+            <p>スクール参加を希望される方は、以下の申請書をダウンロードしてご提出ください。</p>
+            <a href="img/スクール申請書.docx" class="school-link" download>
+                <button>スクール申請書をダウンロード</button>
+            </a>
+        </div>
+    </section>
+
+    <!-- スケジュール・カリキュラム -->
+    <section class="school-schedule">
+        <h2>スケジュールとカリキュラム</h2>
+        <div class="schedule-container">
+            <div class="schedule-item">
+                <h3>前半 / 座学（2日間）</h3>
+                <p><strong>講師:</strong> 家久 信明 氏</p>
+                <p>レーザー加工の基礎と要点について解説します。</p>
+            </div>
+            <div class="schedule-item">
+                <h3>後半 / 実習（3日間）</h3>
+                <p><strong>講師:</strong> 山口 昌樹 先生</p>
+                <p>実際の設備を用いた製作実習を行います。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="program-service">
+        <h2>教育プログラムと試作支援サービス</h2>
+        <div class="program-card">
+            <!-- 教育カリキュラム -->
+            <div class="program-section">
+                <h3>教育カリキュラム（5日間コース）</h3>
+                <ul>
+                    <li>
+                        1) レーザー・短パルスレーザー加工の基礎と関連技術・製品
+                        <span class="days">2日</span>
+                    </li>
+                    <li>
+                        2) IT技術・制御プログラミング入門
+                        <span class="days">1日</span>
+                    </li>
+                    <li>
+                        3) レーザー安全管理講習・製作実習
+                        <span class="days">1日</span>
+                    </li>
+                    <li>
+                        4) 加工物の評価法
+                        <span class="days">1日</span>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <!-- 加工支援サービス -->
+            <div class="program-section">
+                <h3>加工支援サービス</h3>
+                <ul>
+                    <li>1) 取材技術・機能の高度化に向けた研究開発</li>
+                    <li>2) 大手企業からの受託加工</li>
+                    <li>3) 高機能の試作品製作やテスト販売</li>
+                    <li>4) 新製品開発の支援</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer>
+        <p>&copy; 2024 ふらっと試作工房. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

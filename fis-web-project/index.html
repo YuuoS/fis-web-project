@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ふらっと試作工房</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body data-page="home">
+    <!-- ヘッダー -->
+    <header>
+        <div class="header-container">
+            <!-- 左側: ロゴとテキスト全体をリンク化 -->
+            <a href="index.html" class="logo-link">
+                <div class="logo-text">
+                    <img src="img/レーザー工房ロゴ_背景透過.svg" alt="ロゴ" class="header-logo">
+                    <div class="header-title-container">
+                        <span class="header-title">ふらっと試作工房</span>
+                        <span class="header-subtitle">上田市先端技術教育プログラム運営事業</span>
+                    </div>
+                </div>
+            </a>
+            <!-- ナビゲーションメニュー -->
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="facility.html">施設紹介</a></li>
+                    <li><a href="laser_school.html">レーザー精密加工スクール</a></li>
+                    <li><a href="news.html">お知らせ</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <img src="img/レーザー工房ロゴ_背景透過.svg" alt="Flat Innovation Studio" class="hero-logo">
+            <h1>ふらっと試作工房</h1>
+            <p>上田市と信州大学の包括連携協定の一環として設立された、短パルスレーザー加工技術を学ぶことができるイノベーションハブ</p>
+            <!-- お問い合わせボタン -->
+            <button onclick="location.href='contact.html'">お問い合わせ</button>
+        </div>
+    </section>
+
+    <!-- 施設紹介セクション -->
+    <section id="facility" class="facility-section">
+        <div class="facility-container">
+            <!-- 画像 -->
+            <div class="facility-image">
+                <img src="img/UedaShi-ShinshuUniv.svg" alt="上田市と信州大学の連携画像">
+            </div>
+            <!-- 説明文 -->
+            <div class="facility-description">
+                <h2>ふらっと試作工房について</h2>
+                <p>上田市と信州大学の包括連携協定の一環として、今後の市場拡大が期待されている短パルスレーザー加工技術を学ぶことができるイノベーションハブです。</p>
+                <p>信州大学繊維学部ファイバーイノベーション・インキュベーター（Fii）施設に設置する「ふらっと試作工房」は上田市の先端技術教育プログラム運営事業で実施するもので、企業版ふるさと納税が財源となっています。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <h2>コンセプト & サービス</h2>
+        <div class="services-container">
+            <a href="facility.html" class="service-card-link">
+                <div class="service-card">
+                    <img src="img/試作工房.jpg" alt="試作工房">
+                    <h3>施設紹介</h3>
+                    <p>レーザー加工装置を導入し、研究や試作品の開発を支援します。</p>
+                </div>
+            </a>
+            <a href="laser_school.html" class="service-card-link">
+                <div class="service-card">
+                    <img src="img/教育プログラム.jpg" alt="教育プログラム">
+                    <h3>レーザー精密加工スクール</h3>
+                    <p>新技術を学ぶ教育プログラムを提供します。</p>
+                </div>
+            </a>
+            <a href="contact.html" class="service-card-link">
+                <div class="service-card">
+                    <img src="img/事業相談.jpg" alt="事業相談">
+                    <h3>事業相談</h3>
+                    <p>専門家による事業相談で課題解決を支援します。</p>
+                </div>
+            </a>
+            <a href="contact.html" class="service-card-link">
+                <div class="service-card">
+                    <img src="img/交流会.jpg" alt="交流会">
+                    <h3>交流会</h3>
+                    <p>広いネットワークを活用し、企業間連携を深めます。</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 ふらっと試作工房. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
