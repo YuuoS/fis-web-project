@@ -221,3 +221,30 @@ hr {
     background-color: #ddd;
     margin: 20px 0;
 }
+
+@media screen and (max-width: 768px) {
+    .school-container {
+        flex-direction: column; /* 要素を縦並びにする */
+        align-items: center; /* 中央揃え */
+        gap: 20px; /* 要素間のスペース */
+    }
+
+    .pdf-container,
+    .school-description {
+        max-width: 100%; /* 横幅を100%に */
+        text-align: center; /* テキストを中央揃え */
+    }
+
+    .pdf-container iframe {
+        width: 100%; /* PDFの横幅を親要素に合わせる */
+        height: 300px; /* 高さを調整 */
+    }
+
+    .school-description h1 {
+        font-size: 1.8rem; /* タイトルサイズを少し小さく */
+    }
+
+    .school-description p {
+        font-size: 1rem; /* テキストサイズを調整 */
+    }
+}

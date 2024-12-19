@@ -3,7 +3,6 @@
 /* 全体リセット */
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -137,6 +136,17 @@ footer {
 .logo-link {
     display: inline-block;
 }
+
+.nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav-links.show {
+    display: flex;
+}
+
 /* ヘッダー: 現在のページのリンクにスタイルを適用 */
 .nav-links a {
     text-decoration: none;
@@ -182,21 +192,104 @@ html {
     font-size: 1.5rem; /* 適度なサイズ */
     font-weight: bold; /* 太字 */
 }
+
+/* ヘッダーのテキストサイズと折り返し調整 */
 .header-title-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* 左端を揃える */
-    margin-left: 10px; /* 画像との間隔調整 */
+    align-items: flex-start;
+    margin-left: 10px;
+    max-width: 200px; /* 横幅制限を追加 */
+    word-break: break-word; /* 折り返しを許可 */
 }
 
+/* ヘッダータイトルとサブタイトル調整 */
 .header-title {
-    font-size: 1.5rem; /* タイトルのフォントサイズ */
+    font-size: 1.2rem; /* タイトルの文字サイズを調整 */
     font-weight: bold;
     margin: 0; /* 余白をリセット */
 }
 
 .header-subtitle {
-    font-size: 0.9rem; /* 小さめの文字 */
+    font-size: 0.8rem; /* サブタイトルの文字サイズを小さく調整 */
     color: #555;
     margin: 0; /* 余白をリセット */
+    white-space: nowrap; /* テキストを折り返さない */
+    overflow: hidden; /* はみ出た部分を非表示 */
+    text-overflow: ellipsis; /* 必要に応じて省略記号を表示 */
 }
+
+/* ハンバーガーメニュー */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 1001;
+}
+.hamburger-menu span {
+    background: #333;
+    height: 4px;
+    width: 25px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    padding: 0;
+}
+.nav-links ul li {
+    padding: 10px;
+}
+
+/* スマホ用レスポンシブ */
+@media screen and (max-width: 768px) {
+    .hamburger-menu {
+        display: flex;
+    }
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        flex-direction: column;
+        gap: 0;
+        background: #fff;
+        width: 100%;
+        display: none;
+        z-index: 1000;
+    }
+    .nav-links ul {
+        flex-direction: column;
+    }
+    .nav-links.show {
+        display: flex;
+    }
+    .facility-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-logo {
+        width: 70px; /* スマホ時のロゴサイズを小さく */
+        height: auto;
+    }
+    .header-title {
+        margin-left: 0;
+    }
+    .logo-link .header-logo {
+        margin-right: 0;
+    }
+    .logo-link .header-title {
+        font-size: 1.2rem;
+    }
+    .header-subtitle {
+        font-size: 0.7rem;
+    }
+}
+

@@ -160,18 +160,13 @@
     margin-bottom: 10px;
 }
 
-/* ヘッダーの影効果 */
-header {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 下方向に影をつける */
-    z-index: 10; /* 他の要素より上に表示 */
-    position: relative; /* 影の表示を明確にする */
-    background-color: #fff; /* 背景色がないと影が見えにくい */
-    padding: 10px 0;
-}
-
-/* コンセプト&サービス セクションの余白調整 */
+/* サービスカードのデフォルトスタイル */
 .services-container {
-    margin-top: 10px; /* 余白を追加 */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* デフォルトで4列 */
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
 }
 
 /* aタグのデフォルト装飾を削除 */
@@ -216,4 +211,17 @@ button:hover {
     background-color: #005bb5; /* ホバー時の色 */
     transform: translateY(-2px); /* 浮き上がる効果 */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* ホバー時の影 */
+}
+
+/* ウィンドウ幅に応じたサービスカードの配置 */
+@media screen and (max-width: 1200px) {
+    .services-container {
+        grid-template-columns: repeat(2, 1fr); /* 2列表示 */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .services-container {
+        grid-template-columns: 1fr; /* 縦並び */
+    }
 }

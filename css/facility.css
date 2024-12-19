@@ -116,3 +116,16 @@
     height: auto;
     margin-bottom: 10px;
 }
+
+@media screen and (max-width: 768px) {
+    .facility-hero {
+        padding: 15px 0;
+        font-size: 1.2rem;
+    }
+    .facility-content {
+        text-align: center;
+        margin: 10px 10px;
+        max-width: 800px;
+        font-size: 1rem;
+    }
+}
