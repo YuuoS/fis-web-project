@@ -90,13 +90,16 @@
     margin: 0 auto;
 }
 
-.pdf-container {
+/* Container styling for the image or any embedded content */
+.png_container {
     flex: 1;
-    max-width: 50%; /* 左側PDFの最大幅 */
-    background: #f0f0f0;
-    padding: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    max-width: 50%; /* Set maximum width similar to pdf_container */
+    background: #f0f0f0; /* Maintain light background */
+    padding: 10px; /* Add padding for spacing */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    border-radius: 8px; /* Rounded corners for consistency */
+    text-align: center; /* Center align content */
+    margin-bottom: 20px; /* Add spacing below */
 }
 
 .school-description {
@@ -247,23 +250,16 @@ hr {
     .school-description p {
         font-size: 1rem; /* テキストサイズを調整 */
     }
-}
-
-/* Default styling for larger screens */
-.png-container img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Responsive design for smaller screens */
-@media screen and (max-width: 768px) {
     .png-container img {
         max-width: 80%; /* Scale down the image for mobile */
         height: auto;   /* Maintain aspect ratio */
     }
 }
-/* Additional container styling */
-.png_container {
-    text-align: center; /* Center the image in the container */
-    margin-bottom: 20px; /* Add spacing below the image */
+
+/* Image within the container */
+.png_container img {
+    max-width: 100%; /* Scale image within the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove inline spacing issues */
+    margin: 0 auto; /* Center image horizontally */
 }
