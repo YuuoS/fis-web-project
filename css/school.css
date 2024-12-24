@@ -262,4 +262,8 @@ hr {
         height: auto;   /* Maintain aspect ratio */
     }
 }
-
+/* Additional container styling */
+.png_container {
+    text-align: center; /* Center the image in the container */
+    margin-bottom: 20px; /* Add spacing below the image */
+}
