@@ -102,6 +102,43 @@
     margin-bottom: 20px; /* Add spacing below */
 }
 
+.png_container img {
+    max-width: 100%; /* Scale image within the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove inline spacing issues */
+    margin: 0 auto; /* Center image horizontally */
+}
+
+/* Image adjustments for mobile */
+@media screen and (max-width: 768px) {
+    .png-container img {
+        max-width: 80%; /* Scale down the image for mobile */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+/* Flyer Download */
+.flyer-download {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.flyer-download button {
+    background-color: #cccccc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.flyer-download button:hover {
+    background-color: #0a0808;
+}
+
+/* School Description */
 .school-description {
     flex: 1;
     max-width: 50%; /* 右側の解説部分 */
@@ -134,6 +171,7 @@
     background-color: #005bb5;
 }
 
+/* Programs */
 .program-container {
     display: flex;
     flex-wrap: wrap;
@@ -173,22 +211,10 @@
     color: #0078D7;
 }
 
-/* 教育プログラムと試作支援サービス */
 .program-service {
     margin: 20px auto;
     text-align: center;
     padding: 20px;
-}
-
-.program-card {
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    padding: 20px 40px;
-    box-sizing: border-box;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: left;
 }
 
 .program-section {
@@ -225,6 +251,7 @@ hr {
     margin: 20px 0;
 }
 
+/* Responsive adjustments for school-container */
 @media screen and (max-width: 768px) {
     .school-container {
         flex-direction: column; /* 要素を縦並びにする */
@@ -250,37 +277,4 @@ hr {
     .school-description p {
         font-size: 1rem; /* テキストサイズを調整 */
     }
-    .png-container img {
-        max-width: 80%; /* Scale down the image for mobile */
-        height: auto;   /* Maintain aspect ratio */
-    }
 }
-
-/* Image within the container */
-.png_container img {
-    max-width: 100%; /* Scale image within the container */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove inline spacing issues */
-    margin: 0 auto; /* Center image horizontally */
-}
-
-.flyer-download {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.flyer-download button {
-    background-color: #cccccc;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: background-color 0.3s;
-}
-
-.flyer-download button:hover {
-    background-color: #0a0808;
-}
-

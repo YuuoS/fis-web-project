@@ -38,6 +38,7 @@
     margin-bottom: 20px;
 }
 
+/* お問い合わせボタン */
 .contact-btn {
     background-color: #0078D7;
     color: #fff;
@@ -61,7 +62,7 @@
 
 .services-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr); /* デフォルトで4列 */
     gap: 20px;
     width: 90%;
     margin: 0 auto;
@@ -90,6 +91,25 @@
 .service-card p {
     font-size: 1rem;
     color: #555;
+}
+
+.service-card-link {
+    text-decoration: none; /* アンダーラインを消す */
+    color: inherit; /* 親要素の文字色を継承 */
+    display: block; /* カード全体をクリック可能にする */
+}
+
+.service-card h3,
+.service-card p {
+    margin: 0; /* 不要な余白を削除 */
+    color: #333; /* 文字色を固定 */
+    transition: color 0.3s ease; /* ホバー時のスムーズな変化 */
+}
+
+.service-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* カードに影を追加 */
+    transform: translateY(-3px); /* 少し浮き上がる効果 */
+    transition: all 0.3s ease;
 }
 
 /* お知らせセクション */
@@ -160,38 +180,7 @@
     margin-bottom: 10px;
 }
 
-/* サービスカードのデフォルトスタイル */
-.services-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* デフォルトで4列 */
-    gap: 20px;
-    width: 90%;
-    margin: 0 auto;
-}
-
-/* aタグのデフォルト装飾を削除 */
-.service-card-link {
-    text-decoration: none; /* アンダーラインを消す */
-    color: inherit; /* 親要素の文字色を継承 */
-    display: block; /* カード全体をクリック可能にする */
-}
-
-/* カード内のテキストスタイル */
-.service-card h3,
-.service-card p {
-    margin: 0; /* 不要な余白を削除 */
-    color: #333; /* 文字色を固定 */
-    transition: color 0.3s ease; /* ホバー時のスムーズな変化 */
-}
-
-/* ホバー時に背景色や影を追加（オプション） */
-.service-card:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* カードに影を追加 */
-    transform: translateY(-3px); /* 少し浮き上がる効果 */
-    transition: all 0.3s ease;
-}
-
-/* お問い合わせボタンのスタイル */
+/* ボタンのデフォルトスタイル */
 button {
     background-color: #0078D7; /* ボタンの背景色 */
     color: #fff; /* 文字色 */
@@ -213,7 +202,7 @@ button:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* ホバー時の影 */
 }
 
-/* ウィンドウ幅に応じたサービスカードの配置 */
+/* レスポンシブ対応 */
 @media screen and (max-width: 1200px) {
     .services-container {
         grid-template-columns: repeat(2, 1fr); /* 2列表示 */

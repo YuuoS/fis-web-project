@@ -9,6 +9,7 @@
     font-size: 2rem;
     margin-bottom: 20px;
 }
+
 /* お知らせセクション */
 .news-container {
     display: block; /* FlexをBlockに変更 */

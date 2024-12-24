@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-y: scroll; /* 常に縦スクロールバーを表示 */
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -13,8 +17,7 @@ body {
     background-color: #f9f9f9;
 }
 
-
-/* ヘッダーの影効果 */
+/* ヘッダー */
 header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 下方向に影をつける */
     z-index: 10; /* 他の要素より上に表示 */
@@ -23,134 +26,69 @@ header {
     padding: 10px 0;
 }
 
-
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
     width: 90%;
     margin: 0 auto;
+    max-width: 1200px; /* Optional: Set a max-width for the header content */
 }
 
-.header-logo {
-    width: 120px;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: #0078D7;
-}
-
-/* フッター共通 */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
-
-/* ロゴとテキストの配置 */
-.logo-text {
-    display: flex;
-    align-items: center;
-    gap: 10px; /* ロゴとテキストの間隔 */
-}
-
-/* ヘッダーロゴのサイズ調整 */
 .header-logo {
     width: 100px; /* ロゴサイズを大きく */
     height: auto; /* 縦横比を維持 */
 }
 
 .header-title {
-    font-size: 1.2rem; /* タイトルの文字サイズ調整 */
-    margin-left: 10px; /* ロゴとテキストの間隔 */
+    font-size: 1.2rem; /* タイトルの文字サイズを調整 */
     font-weight: bold;
+    margin: 0; /* 余白をリセット */
     color: #333; /* テキストカラー */
 }
 
-/* 共通ボタンスタイル */
-.download-button {
-    background-color: #0078D7;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.download-button:hover {
-    background-color: #005bb5;
-}
-
-/* 施設利用等内規セクション */
-.facility-rules, .school-application {
-    text-align: center;
-    margin: 0;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-}
-
-.facility-rules p, .school-application p {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-}
-
-/* それぞれのボタンリンク */
-.rules-link button, .school-link button {
-    background-color: #0078D7;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.rules-link button:hover, .school-link button:hover {
-    background-color: #005bb5;
-}
-/* ヘッダーロゴサイズ調整 */
-.logo {
-    width: 150px; /* 例: 2倍の大きさに調整 */
-    height: auto;
-}
-
-.logo-link {
-    display: inline-block;
+.header-subtitle {
+    font-size: 0.8rem; /* サブタイトルの文字サイズを小さく調整 */
+    color: #555;
+    margin: 0; /* 余白をリセット */
+    white-space: nowrap; /* テキストを折り返さない */
+    overflow: hidden; /* はみ出た部分を非表示 */
+    text-overflow: ellipsis; /* 必要に応じて省略記号を表示 */
 }
 
 .nav-links {
+    list-style: none;
     display: none;
     flex-direction: column;
     gap: 10px;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
 
 .nav-links.show {
     display: flex;
 }
 
-/* ヘッダー: 現在のページのリンクにスタイルを適用 */
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    padding: 0;
+}
+
+.nav-links ul li {
+    padding: 10px;
+}
+
 .nav-links a {
     text-decoration: none;
     color: #333;
+    font-weight: bold;
     transition: color 0.3s ease;
 }
 
@@ -158,7 +96,6 @@ footer {
     color: #0078D7;
 }
 
-/* 現在のページの目次リンクを強調 */
 .nav-links a.current-page {
     font-weight: bold; /* 太字にする */
     color: #0078D7; /* アクティブなリンク色 */
@@ -172,11 +109,26 @@ footer {
     background-color: #cce4f7; /* ホバー時の背景色 */
     color: #005bb5; /* ホバー時のリンク色 */
 }
-/* 常にスクロールバーを表示 */
-html {
-    overflow-y: scroll; /* 常に縦スクロールバーを表示 */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
 }
-/* ロゴリンクのスタイル調整 */
+
+.logo-text {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* ロゴとテキストの間隔 */
+    max-width: 70%;
+}
+
+.logo {
+    width: 150px; /* 例: 2倍の大きさに調整 */
+    height: auto;
+}
+
 .logo-link {
     display: flex;
     align-items: center;
@@ -193,7 +145,6 @@ html {
     font-weight: bold; /* 太字 */
 }
 
-/* ヘッダーのテキストサイズと折り返し調整 */
 .header-title-container {
     display: flex;
     flex-direction: column;
@@ -203,23 +154,50 @@ html {
     word-break: break-word; /* 折り返しを許可 */
 }
 
-/* ヘッダータイトルとサブタイトル調整 */
-.header-title {
-    font-size: 1.2rem; /* タイトルの文字サイズを調整 */
-    font-weight: bold;
-    margin: 0; /* 余白をリセット */
+.download-button {
+    background-color: #0078D7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.header-subtitle {
-    font-size: 0.8rem; /* サブタイトルの文字サイズを小さく調整 */
-    color: #555;
-    margin: 0; /* 余白をリセット */
-    white-space: nowrap; /* テキストを折り返さない */
-    overflow: hidden; /* はみ出た部分を非表示 */
-    text-overflow: ellipsis; /* 必要に応じて省略記号を表示 */
+.download-button:hover {
+    background-color: #005bb5;
 }
 
-/* ハンバーガーメニュー */
+.facility-rules, .school-application {
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.facility-rules p, .school-application p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.rules-link button, .school-link button {
+    background-color: #0078D7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.rules-link button:hover, .school-link button:hover {
+    background-color: #005bb5;
+}
+
 .hamburger-menu {
     display: none;
     flex-direction: column;
@@ -227,6 +205,7 @@ html {
     cursor: pointer;
     z-index: 1001;
 }
+
 .hamburger-menu span {
     background: #333;
     height: 4px;
@@ -234,26 +213,13 @@ html {
     border-radius: 5px;
     transition: all 0.3s;
 }
-.nav-links {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
-.nav-links ul {
-    display: flex;
-    list-style: none;
-    gap: 10px;
-    padding: 0;
-}
-.nav-links ul li {
-    padding: 10px;
-}
 
 /* スマホ用レスポンシブ */
 @media screen and (max-width: 768px) {
     .hamburger-menu {
         display: flex;
     }
+
     .nav-links {
         position: absolute;
         top: 60px;
@@ -265,31 +231,38 @@ html {
         display: none;
         z-index: 1000;
     }
+
     .nav-links ul {
         flex-direction: column;
     }
+
     .nav-links.show {
         display: flex;
     }
+
     .facility-container {
         flex-direction: column;
         align-items: center;
     }
+
     .header-logo {
         width: 70px; /* スマホ時のロゴサイズを小さく */
         height: auto;
     }
+
     .header-title {
         margin-left: 0;
     }
+
     .logo-link .header-logo {
         margin-right: 0;
     }
+
     .logo-link .header-title {
         font-size: 1.2rem;
     }
+
     .header-subtitle {
         font-size: 0.7rem;
     }
 }
-

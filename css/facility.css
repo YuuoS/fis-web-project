@@ -20,57 +20,10 @@
     margin: 40px auto;
 }
 
+/* .equipment-container */
 .equipment-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.equipment-card {
-    background: #fff;
-    padding: 20px;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    border-radius: 8px;
-}
-
-.facility-application {
-    text-align: center;
-    margin: 40px 0;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-}
-
-.facility-application p {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-}
-
-.application-link button {
-    background-color: #0078D7;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.application-link button:hover {
-    background-color: #005bb5;
-}
-/* 主な設備セクション */
-.equipment-section {
-    text-align: center;
-    padding: 20px 0;
-}
-
-.equipment-container {
+    /* Overwritten duplicate
+       Removed: display: flex; justify-content: space-around; flex-wrap: wrap; */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
@@ -78,16 +31,19 @@
     margin: 0 auto;
 }
 
+/* .equipment-card */
 .equipment-card {
+    /* Overwritten duplicate
+       Removed: width: 30%; padding: 20px; background: #fff; */
     min-width: 250px; /* カードの最小幅を指定 */
     width: 100%;
     text-align: center;
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
+    border: 1px solid #ddd;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
 
 .equipment-card:hover {
     transform: translateY(-5px);
@@ -97,6 +53,13 @@
     width: 100%;
     max-width: 150px; /* 画像の最大幅 */
     height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.equipment-card img {
+    /* Overwritten duplicate
+       Removed: width: 100px; height: auto; */
     margin-bottom: 10px;
     border-radius: 5px;
 }
@@ -111,17 +74,51 @@
     font-size: 1rem;
     color: #555;
 }
-.equipment-card img {
-    width: 100px; /* 画像サイズを適切に設定 */
-    height: auto;
-    margin-bottom: 10px;
+
+/* .facility-application */
+.facility-application {
+    text-align: center;
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
 }
 
+.facility-application p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+/* .application-link */
+.application-link button {
+    background-color: #0078D7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.application-link button:hover {
+    background-color: #005bb5;
+}
+
+/* 主な設備セクション */
+.equipment-section {
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive styles */
 @media screen and (max-width: 768px) {
     .facility-hero {
         padding: 15px 0;
         font-size: 1.2rem;
     }
+
     .facility-content {
         text-align: left;
         margin: 10px 10px;
