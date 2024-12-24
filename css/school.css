@@ -248,3 +248,18 @@ hr {
         font-size: 1rem; /* テキストサイズを調整 */
     }
 }
+
+/* Default styling for larger screens */
+.png-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    .png-container img {
+        max-width: 80%; /* Scale down the image for mobile */
+        height: auto;   /* Maintain aspect ratio */
+    }
+}
+
