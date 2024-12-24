@@ -263,3 +263,24 @@ hr {
     display: block; /* Remove inline spacing issues */
     margin: 0 auto; /* Center image horizontally */
 }
+
+.flyer-download {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.flyer-download button {
+    background-color: #0078D7;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.flyer-download button:hover {
+    background-color: #005bb5;
+}
+
